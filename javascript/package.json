@@ -1,0 +1,45 @@
+{
+  "name": "@accestime/api-client",
+  "version": "0.1.0",
+  "description": "SDK oficial JavaScript/TypeScript para la API de AccesTime",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./webhooks": {
+      "import": "./dist/webhooks.js",
+      "types": "./dist/webhooks.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test test/"
+  },
+  "keywords": [
+    "accestime",
+    "api",
+    "sdk",
+    "time-tracking",
+    "hr",
+    "payroll"
+  ],
+  "author": "AccesTime <soporte@accestime.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "typescript": "^5.4.0"
+  },
+  "homepage": "https://docs.accestime.com",
+  "repository": "github:accestime/sdk-javascript"
+}
